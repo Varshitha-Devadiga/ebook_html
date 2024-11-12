@@ -1,0 +1,25 @@
+.testimonial-card {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 1rem;
+}
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.carousel-indicators {
+    bottom: -50px;
+}
+.carousel-indicators button {
+    background-color: #6c757d !important;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #6c757d;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
