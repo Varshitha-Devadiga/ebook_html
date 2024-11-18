@@ -10,12 +10,15 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="assets/css/app.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+
   </head>
   <body>
-    <main class="bg-primary">
+    <header class="bg-primary">
       <nav class="navbar navbar-expand-lg bg-primary container" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">eBooks</a>
+          <a class="navbar-brand" href="../index.html">eBooks</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -30,13 +33,13 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link"  href="../index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../books/index.html">Books</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../author/index.html">Authors</a>
+                <a class="nav-link active" aria-current="page" href="../author/index.html">Authors</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../about.html">About</a>
@@ -58,7 +61,149 @@
           </div>
         </div>
       </nav>
-    </main>
-    <h1>Authors</h1>
+    </header>
+    <header class="bg-primary text-white py-4">
+      <div class="container text-center">
+          <h1>Our Authors</h1>
+          <p>Meet the brilliant minds behind our books.</p>
+      </div>
+  </header>
+  
+    <main class="container my-5 min-vh-100">
+      <h2 class="text-center mb-4">Authors</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+     <!-- Author 1 -->
+     <div class="col">
+      <div class="card h-100 text-center">
+          <a href="./author-details.html" class="text-decoration-none">
+              <img src="https://via.placeholder.com/150?text=John+Doe" class="card-img-top rounded-circle p-3" alt="John Doe">
+              <div class="card-body">
+                  <h5 class="card-title"><a href="./author-details.html" class="text-primary text-decoration-none">John Doe</a></h5>
+              </div>
+          </a>
+      </div>
+  </div>
+
+
+   <!-- Author 2 -->
+   <div class="col">
+    <div class="card h-100 text-center">
+        <a href="./author-details.html" class="text-decoration-none">
+            <img src="https://via.placeholder.com/150?text=Jane+Smith" class="card-img-top rounded-circle p-3" alt="Jane Smith">
+            <div class="card-body">
+                <h5 class="card-title"><a href="./author-details.html" class="text-primary text-decoration-none">Jane Smith</a></h5>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- Author 3 -->
+<div class="col">
+  <div class="card h-100 text-center">
+      <a href="./author-details.html" class="text-decoration-none">
+        <img src="https://via.placeholder.com/150?text=Emily+Clark" class="card-img-top rounded-circle p-3" alt="Emily Clark">
+            <div class="card-body">
+                <h5 class="card-title"><a href="./author-details.html" class="text-primary text-decoration-none">Emily Clark</a></h5>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- Author 4 -->
+<div class="col">
+  <div class="card h-100 text-center">
+      <a href="./author-details.html" class="text-decoration-none">
+       <img src="https://via.placeholder.com/150?text=Michael+Brown" class="card-img-top rounded-circle p-3" alt="Michael Brown">
+            <div class="card-body">
+                <h5 class="card-title"><a href="./author-details.html" class="text-primary text-decoration-none">Michael Brown</a></h5>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- Author 5 -->
+<div class="col">
+  <div class="card h-100 text-center">
+      <a href="./author-details.html" class="text-decoration-none">
+       <img src="https://via.placeholder.com/150?text=Olivia+Wilson" class="card-img-top rounded-circle p-3" alt="Olivia Wilson">
+            <div class="card-body">
+                <h5 class="card-title"><a href="./author-details.html" class="text-primary text-decoration-none">Olivia Wilson</a></h5>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- Author 6 -->
+<div class="col">
+  <div class="card h-100 text-center">
+      <a href="./author-details.html" class="text-decoration-none">
+            <img src="https://via.placeholder.com/150?text=William+Taylor" class="card-img-top rounded-circle p-3" alt="William Taylor">
+            <div class="card-body">
+                <h5 class="card-title"><a href="./author-details.html" class="text-primary text-decoration-none">William Taylor</a></h5>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- Author 7 -->
+<div class="col">
+  <div class="card h-100 text-center">
+      <a href="./author-details.html" class="text-decoration-none">
+            <img src="https://via.placeholder.com/150?text=Sophia+Martinez" class="card-img-top rounded-circle p-3" alt="Sophia Martinez">
+            <div class="card-body">
+                <h5 class="card-title"><a href="./author-details.html" class="text-primary text-decoration-none">Sophia Martinez</a></h5>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!-- Author 8 -->
+<div class="col">
+  <div class="card h-100 text-center">
+      <a href="./author-details.html" class="text-decoration-none">
+            <img src="https://via.placeholder.com/150?text=James+Anderson" class="card-img-top rounded-circle p-3" alt="James Anderson">
+            <div class="card-body">
+                <h5 class="card-title"><a href="./author-details.html" class="text-primary text-decoration-none">James Anderson</a></h5>
+            </div>
+        </a>
+    </div>
+</div>
+</div>
+      <!--pagination-->
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center my-3 pagination-lg">
+    <li class="page-item disabled">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+<!--pagination ens-->>
+  </main>
+   <div class="bg-dark py-3">
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-white">© 2024 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-twitter"></i></a></li>
+          <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-facebook"></i></a></li>
+        
+        </ul>
+      </footer>
+    </div>
+  </div>
   </body>
 </html>

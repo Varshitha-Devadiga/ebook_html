@@ -10,9 +10,12 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+
   </head>
   <body>
-    <main class="bg-primary">
+    <header class="bg-primary">
       <nav class="navbar navbar-expand-lg bg-primary container" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">eBooks</a>
@@ -30,13 +33,13 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link " href="../index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../books/index.html">Books</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../author/index.html">Authors</a>
+                <a class="nav-link active" aria-current href="../author/index.html">Authors</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../about.html">About</a>
@@ -58,7 +61,75 @@
           </div>
         </div>
       </nav>
-    </main>
-    <h1>Authors Details</h1>
+    </header>
+    <header class="bg-primary text-dark py-4">
+      <div class="container text-center">
+          <h1>Author Details</h1>
+          <p>Learn more about your favorite author and their works.</p>
+      </div>
+  </header>
+  
+    <main class="container my-5 min-vh-100">
+      <div class="row">
+        <!-- Book List (Left) -->
+        <div class="col-md-6">
+            <h2 class="mb-4">Books by John Doe</h2>
+            <ul class="list-group">
+                <!-- Book 1 -->
+                <li class="list-group-item border rounded p-3 mb-3">
+                    <h5 class="mb-2">Mysteries of the Universe</h5>
+                    <p>An enthralling journey through the unexplored mysteries of the cosmos.</p>
+                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                </li>
+                <!-- Book 2 -->
+                <li class="list-group-item border rounded p-3 mb-3">
+                    <h5 class="mb-2">Echoes of Time</h5>
+                    <p>A captivating tale that intertwines history and imagination.</p>
+                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                </li>
+                <!-- Book 3 -->
+                <li class="list-group-item border rounded p-3 mb-3">
+                    <h5 class="mb-2">Shadows of the Past</h5>
+                    <p>A gripping novel unraveling secrets buried deep in the past.</p>
+                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                </li>
+                <!-- Book 4 -->
+                <li class="list-group-item border rounded p-3 mb-3">
+                    <h5 class="mb-2">Dreams and Realities</h5>
+                    <p>An inspiring collection of stories blending dreams and harsh realities.</p>
+                    <a href="#" class="btn btn-primary btn-sm">View Details</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Author Details (Right) -->
+        <div class="col-md-6 text-center d-flex align-items-center">
+            <div>
+                <img src="https://via.placeholder.com/200?text=Author+Image" alt="Author Image" class="img-fluid rounded-circle mb-3">
+                <h1 class="display-6">John Doe</h1>
+                <p class="text-muted">John Doe is a renowned author known for his captivating storytelling and compelling narratives. His works span various genres and have earned critical acclaim worldwide.</p>
+            </div>
+        </div>
+    </div>
+  </main>
+  <div class="bg-dark py-3">
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-white">© 2024 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-twitter"></i></a></li>
+          <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-facebook"></i></a></li>
+        
+        </ul>
+      </footer>
+    </div>
+  </div>
   </body>
 </html>

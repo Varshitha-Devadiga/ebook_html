@@ -10,12 +10,14 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="assets/css/app.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
   </head>
   <body>
-    <main class="bg-primary">
+    <div class="bg-primary">
       <nav class="navbar navbar-expand-lg bg-primary container" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">eBooks</a>
+          <a class="navbar-brand" href="index.html">eBooks</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -30,7 +32,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="books/index.html">Books</a>
@@ -39,7 +41,7 @@
                 <a class="nav-link" href="author/index.html">Authors</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -58,7 +60,209 @@
           </div>
         </div>
       </nav>
-    </main>
-    <h1>About</h1>
+    </div>
+    <header class="bg-primary text-white py-4">
+      <div class="container text-center">
+          <h1>About Us</h1>
+          <p>Discover the Story Behind eBooks Haven</p>
+      </div>
+  </header>
+
+  <main class="container my-5">
+      <!-- Story Section -->
+      <section class="mb-5">
+          <div class="row align-items-center">
+              <div class="col-md-6">
+                  <h2>Our Story</h2>
+                  <p>
+                      Founded in 2020, **eBooks Haven** began with a mission to make books accessible to everyone in the digital age. 
+                      We started as a small platform offering a handful of eBooks and have since grown into a global library, hosting 
+                      thousands of titles across every imaginable genre. 
+                  </p>
+                  <p>
+                      Whether you're a casual reader or a bookworm, our platform ensures that you have access to your next great read 
+                      anytime, anywhere.
+                  </p>
+              </div>
+              <div class="col-md-6">
+                  <img src="https://via.placeholder.com/500x300?text=Our+Story" alt="Our Story" class="img-fluid rounded">
+              </div>
+          </div>
+      </section>
+
+      <!-- Mission Section -->
+      <section class="bg-light py-5 mb-5">
+          <div class="text-center">
+              <h2>Our Mission</h2>
+              <p class="lead">
+                  To create a world where everyone has the freedom to read, learn, and grow without barriers.
+              </p>
+              <p>
+                  By offering an extensive collection of eBooks, personalized recommendations, and a seamless user experience, 
+                  we aim to connect readers with the books they love while supporting authors and publishers in the digital era.
+              </p>
+          </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="mb-5">
+          <h2 class="text-center mb-4">Meet Our Team</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+              <!-- Team Member 1 -->
+              <div class="col">
+                  <div class="card h-100 text-center">
+                      <img src="https://via.placeholder.com/150?text=Team+1" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px;" alt="Team Member 1">
+                      <div class="card-body">
+                          <h5 class="card-title">Emma Watson</h5>
+                          <p class="card-text">Founder & CEO</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Team Member 2 -->
+              <div class="col">
+                  <div class="card h-100 text-center">
+                      <img src="https://via.placeholder.com/150?text=Team+2" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px;" alt="Team Member 2">
+                      <div class="card-body">
+                          <h5 class="card-title">James Smith</h5>
+                          <p class="card-text">CTO</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Team Member 3 -->
+              <div class="col">
+                  <div class="card h-100 text-center">
+                      <img src="https://via.placeholder.com/150?text=Team+3" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px;" alt="Team Member 3">
+                      <div class="card-body">
+                          <h5 class="card-title">Sophia Johnson</h5>
+                          <p class="card-text">Head of Marketing</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </main>
+
+    <div class="container py-5">
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+          </div>
+          
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="testimonial-card text-center">
+                     <h5 class="mb-3">Sarah Johnson</h5>
+                      <p class="text-white mb-2 display-6">New York, USA</p>
+                      <p class="text-white mb-4">"The service was exceptional! I couldn't be happier with the results. The team went above and beyond my expectations."</p>
+                      <div class="text-warning mb-3">
+                          ★★★★★
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="carousel-item">
+                  <div class="testimonial-card text-center">
+                      <h5 class="mb-3">John Smith</h5>
+                      <p class="text-white mb-2 display-6">London, UK</p>
+                      <p class="text-white mb-4">"Incredible attention to detail and professional service. Would highly recommend to anyone looking for quality work."</p>
+                      <div class="text-warning mb-3">
+                          ★★★★★
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="carousel-item">
+                  <div class="testimonial-card text-center">
+                     <h5 class="mb-3">Maria Garcia</h5>
+                      <p class="text-white mb-2 display-6">Barcelona, Spain</p>
+                      <p class="text-white mb-4">"Outstanding experience from start to finish. The team was responsive, creative, and delivered exactly what I needed."</p>
+                      <div class="text-warning mb-3">
+                          ★★★★★
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+      <div class="container my-5">
+        <h2 class="text-center mb-4">Enquiry Form</h2>
+        <form>
+            <div class="row g-3">
+                <!-- First Name -->
+                <div class="col-md-6 mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                </div>
+                
+                <!-- Last Name -->
+                <div class="col-md-6 mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                </div>
+                
+                <!-- Email -->
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                
+                <!-- Mobile Number -->
+                <div class="col-md-6">
+                    <label for="mobile" class="form-label">Mobile Number</label>
+                    <input type="tel" class="form-control" id="mobile" placeholder="Enter your mobile number" required>
+                </div>
+                
+                <!-- Book Selection -->
+                <div class="col-md-6">
+                    <label for="book" class="form-label">Select Book</label>
+                    <select class="form-select" id="book" required>
+                        <option selected disabled>Choose a book...</option>
+                        <option value="book1">Book 1</option>
+                        <option value="book2">Book 2</option>
+                        <option value="book3">Book 3</option>
+                    </select>
+                </div>
+                
+                <!-- Message Box -->
+                <div class="col-md-6">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+                
+                <!-- Submit Button -->
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="bg-dark py-3">
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-white">© 2024 Company, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-twitter"></i></a></li>
+            <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-facebook"></i></a></li>
+          
+          </ul>
+        </footer>
+      </div>
   </body>
 </html>

@@ -10,9 +10,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="assets/css/app.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
   </head>
   <body>
-    <main class="bg-primary">
+    <header class="bg-primary">
       <nav class="navbar navbar-expand-lg bg-primary container" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">eBooks</a>
@@ -30,7 +32,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link"  href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="books/index.html">Books</a>
@@ -42,7 +44,7 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
               </li>
             </ul>
             <ul class="d-flex navbar-nav ms-auto">
@@ -58,7 +60,81 @@
           </div>
         </div>
       </nav>
-    </main>
-   <h1>Contact</h1>
+    </header>
+    <header class="bg-primary text-white py-4">
+      <div class="container text-center">
+          <h1>Contact Us</h1>
+          <p>We'd love to hear from you! Get in touch with us.</p>
+      </div>
+  </header>
+
+  <main class="container my-5">
+      <div class="row">
+          <!-- Contact Form -->
+          <div class="col-md-6">
+              <h2 class="mb-4">Send Us a Message</h2>
+              <form>
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email Address</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                  </div>
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea class="form-control" id="message" rows="5" placeholder="Write your message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+          </div>
+
+          <!-- Contact Details -->
+          <div class="col-md-6">
+              <h2 class="mb-4">Our Contact Information</h2>
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <h5 class="card-title">Address</h5>
+                      <p class="card-text">123 eBooks Haven Street, Knowledge City, Bookland, 45678</p>
+                  </div>
+              </div>
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <h5 class="card-title">Email</h5>
+                      <p class="card-text">
+                          <a href="mailto:contact@ebookshaven.com">contact@ebookshaven.com</a>
+                      </p>
+                  </div>
+              </div>
+              <div class="card mb-4">
+                  <div class="card-body">
+                      <h5 class="card-title">Phone</h5>
+                      <p class="card-text">+1 234 567 890</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </main>
+   
+    <div class="bg-dark py-3">
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-white">© 2024 Company, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-twitter"></i></a></li>
+            <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-facebook"></i></a></li>
+          
+          </ul>
+        </footer>
+      </div>
+      
   </body>
 </html>
